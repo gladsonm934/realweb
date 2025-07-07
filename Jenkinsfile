@@ -7,16 +7,6 @@ pipeline{
         git 'https://github.com/gladsonm934/realweb.git'
       }
     }
-    stage('Build') {
-      steps {
-        echo 'No build needed for static site.'
-      }
-    }
-    stage('Test') {
-      steps {
-        echo 'Run the application'
-      }
-    }
     stage('Deploy') {
       steps {
         sh '''
